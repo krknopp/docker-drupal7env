@@ -32,4 +32,4 @@ ADD crons.conf /root/crons.conf
 #Add cron job
 RUN crontab /root/crons.conf
 
-CMD ["apache-start"]
+CMD ["/apache-start"]
