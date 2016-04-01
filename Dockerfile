@@ -28,6 +28,7 @@ VOLUME ["/var/www/site", “/etc/apache2/sites-enabled”]
 ADD apache-start /apache-start
 ADD ssmtp.conf /etc/ssmtp/ssmtp.conf
 ADD crons.conf /root/crons.conf
+ADD site.conf /etc/apache2/sites-enabled/site.conf
 
 #Add cron job
 RUN crontab /root/crons.conf
