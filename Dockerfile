@@ -14,6 +14,10 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev git 
 
 WORKDIR /var/www/html
 
+# Set default Environment Variables
+ENV APACHE_DOCROOT=/var/www/html/docroot
+ENV APACHE_LOG_DIR=/etc/apache2/sites-enabled
+
 #Install drush
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer \
 && ln -s /usr/local/bin/composer /usr/bin/composer
