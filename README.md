@@ -18,3 +18,5 @@ MYSQL_PASSWORD - MySQL Password
 GIT_REPO - https URL for Git Repo  
 GIT_BRANCH - Branch to pull from  
 GIT_HOSTS - HOSTS file entry, if needed (i.e. "10.10.3.20 gitlab.example.com"  
+**Apache Config**  
+APACHE_DOCROOT - root path for web site (default is /var/www/html)
