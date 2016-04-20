@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# attempt to log public IP address of container
+dig +short myip.opendns.com @resolver1.opendns.com
+
 # Add gitlab to hosts file
 grep -q -F "$GIT_HOSTS" /etc/hosts  || echo $GIT_HOSTS >> /etc/hosts
 
